@@ -13,9 +13,6 @@ export default function Todo({index,todo,removeTask,todos,setTodos}) {
     }
     
 
-
-     
-
     return (
         <div className="todo-block">
         <div className={todo.completed ? "todo overline" : "todo"}   onClick={completedTask} >

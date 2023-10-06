@@ -10,7 +10,6 @@ export default function Todos({todos,setTodos}) {
         todosCopy.splice(index, 1);
         setTodos(todosCopy)
     }
-      
 
     return (
         <div className="todos">

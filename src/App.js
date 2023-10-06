@@ -5,31 +5,16 @@ import Todos from "./Todos";
 
 function App() {
 
-    const [todos, setTodos] = useState([
-
-
-    ])
-
-    
+    const [todos, setTodos] = useState([])
 
 
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/todos')
         .then(response => response.json())
-        .then(data => {
-            setTodos(data)
-        })
+        .then(data => setTodos(data))
         
         
     }, [])
-
-
- 
-
-
-
-
-
 
     return(
         <div className="App">
